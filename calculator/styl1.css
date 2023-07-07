@@ -1,0 +1,37 @@
+.main {
+   margin: auto;
+ 
+    background: #000;
+    height: 360px;
+    width: 250px;
+}
+.btt {
+   text-align: center;
+    
+}
+button{
+    padding: 10px;
+    margin: 2px;
+    width: 35px;
+}
+h1{  margin-top: 10px;
+    color: white;}
+.eq{
+    width:55px;
+    border-radius: 3px;
+    margin: 9px;
+}
+.input {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    background-color: azure;
+    color: #000;
+    
+  }
+  
