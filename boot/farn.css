@@ -1,0 +1,177 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000;
+  }
+  #navimg{
+    height: 50px;
+    width: 150px;
+  }
+
+   #text{
+      color: white;
+  
+              }
+
+  #cards_landscape_wrap-2{
+    text-align: center;
+    background-image: url("https://t3.ftcdn.net/jpg/05/97/25/06/240_F_597250608_wdf7Z4LczqqkIaJSDCqH4CaZN2mEleFz.jpg");
+    opacity: 0.6;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1); 
+    background-repeat: no-repeat;
+    background-size: 2400px 5000px;
+  }
+  #cards_landscape_wrap-2 .container{
+    padding-top: 80px; 
+    background-image: url("https://t4.ftcdn.net/jpg/03/18/01/41/240_F_318014123_DPsnR1pBYTAHfytUNvpS4htYumy0SB7W.jpg");
+   
+    padding-bottom: 100px;
+  }
+  #cards_landscape_wrap-2 a{
+    text-decoration: none;
+    outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+    background: #f1f1f1;
+    overflow: hidden;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+    width: 100%;
+    height: 200px;
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+    text-align: center;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+    padding: 30px 18px;
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+    background: #FFFFFF;
+    margin-top: 50px;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover{
+    background: #fff;
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    margin-top: 50px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000000;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6{
+    margin-top: 0px;
+    margin-bottom: 4px; 
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto Black', sans-serif;
+    letter-spacing: 1px;
+    color: #00acc1;
+  }
+  #i{height: 55px;
+      width: 55px;
+  
+  }
+  #i1{
+    height: 500px;
+  }
+  #card{
+    background-image: linear-gradient( rgb(42, 41, 41),rgb(0, 0, 0));
+    margin-top: 34px;
+    color: white;
+   
+    margin: 9px;
+   
+  }
+  #card-im{
+    height: 450px;
+    margin: 5px;
+  width: auto;
+   border-radius: 15px;
+  }
+  #d-dv{
+    background-color: #4d4c4c;
+    height: 200px;
+    margin-top: 13px;
+    text-align: center;
+  }
+
+  #vl{
+  background-color: #512884; 
+    height: 140px;
+    width: 2px;
+    }
+  #text{
+    font-family:'Gill Sans', 'Gill Sans MT', sans-serif, 'Trebuchet MS', ;
+    
+  }
+
+  .icon{
+      width: 100px;
+  
+      display: flex;
+     gap: 44px;
+  }
+  .mp{
+      margin: 2px;
+      margin-left: 0px;
+      width: 294px;
+  }
+  #ftext{
+    color: #b0b0b0;
+  }
+  #card2{
+    background-image: linear-gradient(black,rgb(65, 65, 65));
+  }
+  #c-text{ 
+    background-image: linear-gradient(black,rgb(65, 65, 65));
+   
+  }
+  ::-webkit-scrollbar {
+    width: 20px;
+    background-color: #010101;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #6330a1; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(43, 43, 43); 
+    border-radius: 10px;
+  } 
+  #srcbtt{
+    border-color: #2d2d9c;
+    border-radius: 14px;
+    width: 106px;
+  }
