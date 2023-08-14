@@ -1,274 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="CodeHim">
-    <title>Add To Cart using HTML Example</title>
-    
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,400italic'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css'>
-    
-    <link rel="stylesheet" href="shop.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Add To Cart using HTML Example</title>
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,400italic'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="shop.css">
+  <link rel="stylesheet" href="magicscroll.css"/>
+<script src="magicscroll.js"></script>
 
 
+
+
+
+
+  </header>
+
+
+
+
+  <div class="wrapper">
+
+    <div class="site-header">
+      <div class="inner-wrap">
+        <h1>Shopping.</h1>
+        <ul class="list-inline">
+          <li><button class="search"><i class="fa fa-search"></i></button></li>
+          <li><button class="account">Login</button></li>
+          <li ><button class="open"   type="button" >Your Cart <i class="fa fa-lg fa-shopping-cart  "></i></button></li>
+          <span class="total-count" id="sum-prices"></span>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-toolbar">
+      <div class="inner-wrap clearfix">
+        <div class="notifications animated"><span>Amazing Product</span> Added to Cart!</div>
+      </div>
+    </div>
+
+    <div class="filter-grid">
+      <div class="inner-wrap">
+        <div class="filter-cell">
+          <select class="form-control">
+            <option value="*">Category</option>
+            <option value="fav">Favorites</option>
+          </select>
+        </div>
+        <div class="filter-cell">
+          <select class="form-control">
+            <option value="*">Product Type</option>
+            <option value="square">Square</option>
+            <option value="circular">Circular</option>
+          </select>
+        </div>
+        <div class="filter-cell">
+          <select class="form-control" disabled="true">
+            <option>Price</option>
+          </select>
+        </div>
+        <div class="filter-cell">
+          <select class="form-control" disabled="true">
+            <option>Brand</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container">
+    <div class="maind">
+
+      <div class="container">
+        <div class="row">
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">t-shirt</h4>
+                <h2 class="hide productId">1</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-name="t-shirt" data-price="9" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">clothes</h4>
+                <h2 class="hide productId">2</h2>
+                <p class="card-text priceValue">900</p>
+                <button data-name="product" data-price="1.22" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">clothes</h4>
+                <h2 class="hide productId">3</h2>
+                <p class="priceValue card-text">Price: $5</p>
+                <button data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">Orange</h4>
+                <h2 class="hide productId">4</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class=" card-title productName">clothes</h4>
+                <h2 class="hide productId">5</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-name="product" data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName ">clothes</h4>
+                <h2 class="hide productId">6</h2>
+                <p class="card-text priceValue ">900</p>
+                <button data-name="product" data-price="1.22" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title productName">Lemon</h4>
+                <h2 class="hide productId">6</h2>
+                <p class="priceValue card-text">Price: $5</p>
+                <button data-name="product" data-price="5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+         <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">clothes</h4>
+                <h2 class="hide productId">7</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Orange</h4>
+                <h2 class="hide productId">9</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-name="product" data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">10</h2>
+                <p class="priceValue card-text">900</p>
+                <button data-name="product" data-price="1.22" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">11</h2>
+                <p class="priceValue card-text">Price: $5</p>
+                <button data-name="product" data-price="5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">12</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-price="0.5" class="animated-button addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">13</h2>
+                <p class=" card-text priceValue">700</p>
+                <button data-name="product" data-price="0.5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">14</h2>
+                <p class="priceValue card-text">900</p>
+                <button data-name="product" data-price="1.22" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU="
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">15</h2>
+                <p class="priceValue card-text">Price: $5</p>
+                <button data-name="product" data-price="5" class="animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col product">
+            <div class="card product-under" style="width: 20rem;">
+              <img class="card-img-top product-image"
+                src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt="Card image cap">
+              <div class="card-block">
+                <h4 class="productName card-title">dgdhgcxhndgx</h4>
+                <h2 class="hide productId">16</h2>
+                <p class=" card-text priceValue">2.5</p>
+                <button data-price="0.5" class=" animated-button  addToCart">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="producstOnCart ">
+    <div class="overlay"></div>
+    <div class="top">
+      <button  id="closeButton">
+        <i  class="fa-regular fa-rectangle-xmark"></i>
+      </button>
+      <h3>Cart</h3>
+    </div>
+    <ul id="buyItems">
+      <h4 class="empty">Your shopping cart is empty</h4>
+      <li class="buyItem">
+
+
+      </li>
+    </ul>
+    <button class="btn checkout hidden">Check out</button>
+  </div>
+  </div>
   
- 
-
-
-
- 
- </header>
-      
-
-
-
-<div class="wrapper">
-
-  <div  class="site-header">
-    <div class="inner-wrap">
-      <h1>Shopping.</h1>
-      <ul class="list-inline">
-        <li><a href="#" class="search"><i class="fa fa-search"></i></a></li>
-        <li><a href="#" class="account">Login</a></li>
-        <li><button class="your-cart js-toggle-cart" class="modal-title" onclick="displayCart()" type="button">Your Cart <i class="fa fa-lg fa-shopping-cart"></i></button></li>
-        <span class="total-count"></span>
-      </ul>
-    </div>
   </div>
-
-  <div class="site-toolbar">
-    <div class="inner-wrap clearfix">
-      <div class="notifications animated"><span>Amazing Product</span> Added to Cart!</div>
-    </div>
   </div>
-
-  <div class="filter-grid">
-    <div class="inner-wrap">
-      <div class="filter-cell">
-        <select class="form-control">
-          <option value="*">Category</option>
-          <option value="fav">Favorites</option>
-        </select>
-      </div>
-      <div class="filter-cell">
-        <select class="form-control">
-          <option  value="*">Product Type</option>
-          <option value="square">Square</option>
-          <option value="circular">Circular</option>
-        </select>
-      </div>
-      <div class="filter-cell">
-        <select class="form-control" disabled="true">
-          <option>Price</option>
-        </select>
-      </div>
-      <div class="filter-cell">
-        <select class="form-control" disabled="true">
-          <option>Brand</option>
-        </select>
-      </div>
-    </div>
-  </div>
-</div>
-<br>
-<br>
-<div class="container">
-<div class="maind">
-
-<div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Orange</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI=" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title"></h4>
-    <p class="card-text">Price: $1.22</p>
-    <a href="#" data-name="" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU=" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Lemon</h4>
-    <p class="card-text">Price: $5</p>
-    <a href="#" data-name="" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Orange</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#"  data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Orange</h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#" data-name="" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI=" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title"></h4>
-    <p class="card-text">Price: $1.22</p>
-    <a href="#" data-name="" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU=" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Lemon</h4>
-    <p class="card-text">Price: $5</p>
-    <a href="#" data-name="" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title"></h4>
-    <p class="card-text">Price: $0.5</p>
-    <a href="#"  data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-  </div>
-</div>
-      </div>
-    </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title">Orange</h4>
-  <p class="card-text">Price: $0.5</p>
-  <a href="#" data-name="" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI=" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $1.22</p>
-  <a href="#" data-name="" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU=" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $5</p>
-  <a href="#" data-name="" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $0.5</p>
-  <a href="#"  data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $0.5</p>
-  <a href="#" data-name="" data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://media.istockphoto.com/id/1354020635/photo/white-t-shirt-mockup-front-used-as-design-template-tee-shirt-blank-isolated-on-white.webp?b=1&s=170667a&w=0&k=20&c=X5WLEp3EiqJ7eQqGQPW6Vx8l7joo56cTsCmSOIaAfPI=" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $1.22</p>
-  <a href="#" data-name="" data-price="1.22" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://media.istockphoto.com/id/1407082939/photo/black-sweatshirts-with-hoodie-for-logo-mockup-template.webp?b=1&s=170667a&w=0&k=20&c=cUMWgBfb6L0nBY7kVENoLySwlGOn80oah919INZTmzU=" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $5</p>
-  <a href="#" data-name="" data-price="5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card" style="width: 20rem;">
-<img class="card-img-top" src="https://images.unsplash.com/photo-1588099768531-a72d4a198538?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3RoaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Card image cap">
-<div class="card-block">
-  <h4 class="card-title"></h4>
-  <p class="card-text">Price: $0.5</p>
-  <a href="#"  data-price="0.5" class="add-to-cart btn btn-primary">Add to cart</a>
-</div>
-</div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
- <div id="show-cart"  class="cart">
-<button class="close" onclick="closeb()" type="button" >X</button>
- </div>
-
-</body>
-<script src="jquery-3.6.4.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="main.js"></script>
+  
+  <script src="jquery-3.6.4.min.js" type="text/jQuery"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="main.js"></script>
+  <script src="magicscroll/magicscroll.js"></script>
 </html>
